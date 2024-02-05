@@ -1,0 +1,27 @@
+PROCEDURE Produitscalaire(t1,t2,VAR resultat)
+VAR
+
+BEGIN
+    FOR i FROM 1 TO 2 STEP   DO
+        resultat = resultat + t1[i] * t2[i]
+
+    END_FOR
+END
+ALGORITHM checkpoint
+
+VAR
+    v1  : ARRAY_OF INTEGER[] := [5,3];
+    v2  : ARRAY_OF INTEGER[] := [1,2]; 
+    jordan : INTEGER;
+BEGIN
+     Produitscalaire(v1,v2,jordan)
+
+     IF (jordan = 0) THEN
+        write("perpendiculaire")
+        
+    ELSE
+            write("non perpendiculaire")
+    END_IF
+     
+
+END

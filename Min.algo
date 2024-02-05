@@ -1,0 +1,15 @@
+ALGORITHM min
+
+VAR
+    T : ARRAY_OF INTEGER[];
+    min : INTEGER := T [1];
+BEGIN
+    
+ FOR i FROM 1 TO T. length STEP 1  DO
+      IF (T[I]<min) THEN
+          min := T[i];
+      END_IF
+ END_FOR 
+
+  write("le minimum est : ,"  min)
+END
